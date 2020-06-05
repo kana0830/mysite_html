@@ -12,9 +12,6 @@
   clear: both;
 }
 
-
-
-/*＝＝＝＝＝＝ヘッダー＝＝＝＝＝＝*/
 /* リンクの飾りをリセット */
 a {
   text-decoration: none;
@@ -25,286 +22,282 @@ a:link, a:visited, a:hover, a:active  {
   color: #FAFAFA;
 }
 
+
+
+/*＝＝＝＝＝＝ヘッダー＝＝＝＝＝＝*/
 header{
   background-color: #EC715F;
+  width: auto;
 }
 
-nav{
+.head{
   width: 1024px;
-}
-
-.head-title{
   height: 70px;
   margin: 0 auto;
 }
 
-.title-logo img{
-  float: left;  /* リストを横に持ってくる */
+.head img{
   height: 70px;
+  float: left;
 }
 
 .nav-list{
-  float: right;  /* 右寄せ */
+  float: right;
 }
 
 .nav-list-item{
-  list-style: none;   /* リストの点を取る */
-  display: inline-block;   /* 横並びにする */
   font-size: 16px;
+  color: #FAFAFA;
   padding: 0 30px;
-  line-height: 70px;   /* 上下中央揃え(1行の場合だけ使える) */
+
+  line-height: 70px; 
+  list-style: none;   /* リストの点を取る */
+  display: inline-block; 
 }
 
-.menu-box{
-  display: none;
-}
 
 
 
 
 /* ＝＝＝＝＝＝メイン＝＝＝＝＝＝ */
-/* ＝＝＝＝＝＝ローレム＝＝＝＝＝＝ */
-.lorem{
-  background-image: url(img/mv.png);  /* 背景画像設定 */
+/* ＝＝＝＝＝＝ロレム＝＝＝＝＝＝ */
+#lorem{
+  height: 650px;
+  width: auto;
+  background-image: url(img/mv.png); 
   background-size: cover;  /* 縦横比を維持したまま背景領域を埋め尽くす */
   background-position: center;   /* 背景画像中央寄せ */
   text-align: center;
-  
 }
 
-.lorem-text{
-  color: #FAFAFA;
-  height: 650px;
-}
-
-.lorem-text h1{
+.lorem-content h1{
+  padding: 200px 0 10px;
   font-size: 64px;
-  padding-top: 200px;
+  color: #FAFAFA;
 }
 
-.lorem-text p{
+.lorem-content p{
   font-size: 20px;
-  padding-top: 10px;
+  color: #FAFAFA;
 }
+
+
 
 
 
 /* ＝＝＝＝＝＝ポートフォリオ＝＝＝＝＝＝ */
-#portfolio{
+#portforio{
+  width: auto;
   background-color: #ECEFF1;
-  text-align: center;
-  color: #000000;
-  padding-top: 90px;
-  padding-bottom: 90px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 90px 0;
 }
 
-.portfolio-text h4{
+.portforio-content{
+  width: 920px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.portforio-content h1{
   font-size: 32px;
 }
 
 /* 棒線 */
-.portfolio-text h4::after{
+.portforio-content h1::after{
   content: "";
   display: block;
   width: 70px;
   height: 3px;
   margin: 8px auto 0 auto;
-  background-color: #EC715F;
   margin-left: auto;
   margin-right: auto;
 }
 
-.portfolio-text p{
-  margin-top: 30px;
-  padding-bottom: 30px;
+.portforio-content p{
+  margin: 30px 0;
   font-size: 16px;
 }
 
-.portfolio-img{
-  margin-left: auto;
-  margin-right: auto;
-  width: 920px;
+.pic-group1{
+  background-image: url(img/sketch.jpg); 
+  width: 300px;
+  height: 250px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-size: cover;
+  background-position: bottom;
 }
 
-.portfolio-img1{
-  background-image: url(img/sketch.jpg);
-  height: 250px;
+.pic-group2{
+  background-image: url(img/websuku.png); 
   width: 300px;
-  background-size: cover;
-  background-position: bottom;
+  height: 250px;
+  float: left;
   margin-right: 10px;
   margin-bottom: 10px;
-  float: left;
-}
-.portfolio-img2{
-  background-image: url(img/websuku.png);
-  height: 250px;
-  width: 300px;
   background-size: cover;
   background-position: bottom;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  float: left;
-}
-.portfolio-img3{
-  background-image: url(img/write.jpg);
-  height: 250px;
-  width: 300px;
-  background-size: cover;
-  background-position: bottom;
-  margin-bottom: 10px;
-  float: left;
-}
-.portfolio-img4{
-  background-image: url(img/webcamp.png);
-  height: 250px;
-  width: 300px;
-  background-size: cover;
-  background-position: bottom;
-  margin-right: 10px;
-  float: left;
-}
-.portfolio-img5{
-  background-image: url(img/talk.jpg);
-  height: 250px;
-  width: 300px;
-  background-size: cover;
-  background-position: bottom;
-  margin-right: 10px;
-  float: left;
-}
-.portfolio-img6{
-  background-image: url(img/webcamp-mother.png);
-  height: 250px;
-  width: 300px;
-  background-size: cover;
-  background-position: bottom;
-  float: left;
 }
 
+.pic-group3{
+  background-image: url(img/write.jpg); 
+  width: 300px;
+  height: 250px;
+  float: left;
+  margin-bottom: 10px;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.pic-group4{
+  background-image: url(img/webcamp.png); 
+  width: 300px;
+  height: 250px;
+  float: left;
+  margin-right: 10px;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.pic-group5{
+  background-image: url(img/talk.jpg); 
+  width: 300px;
+  height: 250px;
+  float: left;
+  margin-right: 10px;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.pic-group6{
+  background-image: url(img/webcamp-mother.png); 
+  width: 300px;
+  height: 250px;
+  float: left;
+  background-size: cover;
+  background-position: bottom;
+}
 
 
 
 /* ＝＝＝＝＝＝フィーチャー＝＝＝＝＝＝ */
 #feature{
-  text-align: center;
-  color: #000000;
-  padding-top: 90px;
-  padding-bottom: 90px;
+  width: auto;
+  padding: 90px 0;
 }
 
-.feature-text h4{
+.feature-content{
+  width: 980px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.feature-content h1{
   font-size: 32px;
 }
 
-.feature-text h4::after{
+/* 棒線 */
+.feature-content h1::after{
   content: "";
   display: block;
   width: 70px;
   height: 3px;
   margin: 8px auto 0 auto;
   background-color: #EC715F;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.feature-text p{
-  margin-top: 30px;
-  padding-bottom: 30px;
+.feature-content p{
+  margin: 30px 0;
   font-size: 16px;
 }
 
-.feature-content{
-  padding-bottom: 90px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 980px;
-}
-
-.strength{
-  float: left;
-  color: #000000;
+.strength-item{
   width: 320px;
-  box-sizing: border-box;
   margin-right: 10px;
+  float: left;
 }
 
-.strength i{
+.strength-item:last-child{
+  margin-right: 0px;
+}
+
+.strength-item i{
   font-size: 60px;
 }
 
-.strength h3{
+.strength-item h1{
   font-size: 20px;
+  padding: 10px 0;
 }
 
-.strength p{
-  font-size: 16px;
-  text-align: left;
-}
 
-.strength:nth-of-type(3){
-  margin-right: 0px;
-}
+
 
 
 
 /* ＝＝＝＝＝＝プロフィール＝＝＝＝＝＝ */
 #profile{
-  text-align: center;
-  color: #000000;
-  padding-top: 90px;
-  padding-bottom: 90px;
+  width: auto;
   background-color: #ECEFF1;
+  padding: 90px 0;
 }
 
-.profile-text{
+.profile-content{
   width: 1024px;
   margin: 0 auto;
+  text-align: center;
 }
 
-.profile-text h4{
+.profile-about h1{
   font-size: 32px;
 }
 
-.profile-text h4::after{
+/* 棒線 */
+.profile-about h1::after{
   content: "";
   display: block;
   width: 70px;
   height: 3px;
   margin: 8px auto 0 auto;
-  background-color: #EC715F;
-}
-
-.p-text{
-  margin-top: 30px;
-  padding-bottom: 30px;
-  font-size: 16px;
-}
-
-.profile-img{
-  width: 512px;
-  float: left;
   margin-left: auto;
   margin-right: auto;
 }
 
-.profile-text img{
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;  /* 画像の枠を丸にする */
+.profile-about p{
+  padding: 30px 0;
+  font-size: 16px;
 }
 
-.introduce{
+.profil-img{
   width: 512px;
-  float: right;
+  float: left;
+}
+
+.profil-img img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.profile-text{
+  width: 512px;
+  float: left;
   text-align: left;
 }
 
-.profile-text h5{
+.profile-text h2{
   font-size: 20px;
 }
 
-.name{
+.profile-text p{
+  font-size: 16px;
+  padding-top: 5px;
+}
+
+.profile-text .my-name{
   padding-bottom: 20px;
 }
 
@@ -313,74 +306,81 @@ nav{
 
 /* ＝＝＝＝＝＝コンタクト＝＝＝＝＝＝ */
 #contact{
-  text-align: center;
-  color: #000000;
-  padding-top: 90px;
-  padding-bottom: 90px;
-  width: 800px;
-  margin:0 auto;
+  width: auto;
+  padding: 90px 0;
 }
 
-.contact-text h4{
+.contact-content{
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-about h1{
   font-size: 32px;
 }
 
-.contact-text h4::after{
+/* 棒線 */
+.contact-about h1::after{
   content: "";
   display: block;
   width: 70px;
   height: 3px;
   margin: 8px auto 0 auto;
   background-color: #EC715F;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.contact-text p{
-  margin-top: 30px;
-  margin-bottom: 30px;
+.contact-about p{
+  padding: 30px 0;
   font-size: 16px;
 }
 
-.left-content{
+.contact-left{
   float: left;
   width: 400px;
   text-align: center;
 }
 
-  /* 左揃え中央配置（親要素にtext-align: center;必須） */
-.number{
+.left-group{
   text-align: left;
   display: inline-block;
 }
 
-.left-content h5{
+.contact-left h2{
   font-size: 20px;
   padding-bottom: 5px;
 }
 
-.left-content p{
-  padding-bottom: 20px;
+.contact-left p{
+  font-size: 20px;
+  padding-bottom: 5px;
   text-decoration: underline;
 }
 
-.right-content{
-  float: right;
+.contact-right{
+  float: left;
   width: 400px;
-  text-align: center
+  text-align: center;
 }
 
-.sns{
-  text-align: left;
-  display: inline-block;
+.right-group{
+text-align: left;
+display: inline-block;
 }
 
-.right-content h5{
+.right-group h2{
   font-size: 20px;
-  padding-bottom: 5px;
 }
 
-.right-content i{
+.right-group i{
   font-size: 50px;
-  padding-right: 20px;
+  margin-right: 20px;
+}
+
+.right-group i:last-child{
+  margin-right: 0px;
 }
 
 
@@ -388,31 +388,22 @@ nav{
 
 /* ＝＝＝＝＝＝フッター＝＝＝＝＝＝ */
 footer{
+  width: auto;
   background-color: #EC715F;
+  line-height: 60px;
   font-size: 16px;
   color: #FAFAFA;
-  line-height: 60px; 
   text-align: center;
-
 }
+
+
+
 
 
 
 
 /* ＝＝＝＝＝＝レスポンシブ対応＝＝＝＝＝＝ */
 @media screen and (max-width: 767px){
-
-
-  /* ＝＝＝＝＝＝ヘッダー＝＝＝＝＝＝ */
-  .head-title{
-    height: 50px;
-    width: 90%;
-  }
-
-  .title-logo img{
-    height: 50px;
-    float: left;
-  }
 
   /* ＝＝＝＝＝＝ハンバーガーメニュー＝＝＝＝＝＝ */
   .menu-box {
@@ -423,6 +414,7 @@ footer{
     border: 1px solid #FAFAFA;
     margin-top: 5px;
     margin-bottom: 5px;
+
   }
 
   .list-bar {
@@ -437,137 +429,154 @@ footer{
     margin-top: 10px;
   }
 
+  /* ＝＝＝＝＝＝ヘッダー＝＝＝＝＝＝ */
+  .head{
+    width: 90%;
+    height: 50px;
+  }
+
+  .head img{
+    height: 50px;
+  }
+
   .nav-list-item{
     display: none;
   }
 
-
-
-
-
-    /* ＝＝＝＝＝＝ローレム＝＝＝＝＝＝ */
-  .main{
+  /* ＝＝＝＝＝＝ロレム＝＝＝＝＝＝ */
+  #lorem{
     background-image: url(img/code.png); 
   }
 
-  .main-text{
+  .lorem-content{
     width: 90%;
-    height: 650px;
     margin: 0 auto;
   }
 
-  .main-text h1{
+  .lorem-content h1{
+    padding: 200px 0 10px;
     font-size: 40px;
+    color: #FAFAFA;
   }
   
-  .main-text p{
+  .lorem-content p{
     font-size: 18px;
+    color: #FAFAFA;
   }
-
-
-
 
 
   /* ＝＝＝＝＝＝ポートフォリオ＝＝＝＝＝＝ */
-  #portfolio{
-    padding: 0 5%;
+  .portforio-content{
+    width: 90%;
   }
 
-  .portfolio-content{
-    width: 90%;
+  .pic-group1{
+    background-image: url(img/websuku.png); 
+    margin: 0 auto;
+    margin-bottom: 10px;
+    float: none;
+
+  }
+  .pic-group2{
+    background-image: url(img/webcamp.png); 
+    margin: 0 auto;
+    margin-bottom: 10px;
+    float: none;
+  }
+
+  .pic-group3{
+    background-image: url(img/webcamp-mother.png); 
+    float: none;
     margin: 0 auto;
   }
 
-  .portfolio-pi{
-    width: 90%;
-    background-color: blueviolet;
-  }
-  
-  .portfolio-img1{
-    background-image: url(img/websuku.png);
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .portfolio-img2{
-    background-image: url(img/webcamp.png);
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .portfolio-img3{
-    background-image: url(img/webcamp-mother.png);
-    margin-bottom: 90px;
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .portfolio-img4{
+  .pic-group4{
     display: none;
   }
 
-  .portfolio-img5{
+  .pic-group5{
     display: none;
   }
 
-  .portfolio-img6{
+  .pic-group6{
     display: none;
   }
 
-  .strength i{
-    font-size: 60px;
-  }
 
-  .strength{
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .strength h3{
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  .strength p{
-    margin-bottom: 10px;
-  }
+
 
 
 
 
   /* ＝＝＝＝＝＝フィーチャー＝＝＝＝＝＝ */
+  .feature-content{
+    width: 90%;
+  }
 
+  .strength-item{
+    margin: 0 auto;
+    float: none;
+  }
 
-
-
-
-
-
-
+  .strength-item:last-child{
+    margin: 0 auto;
+  }
 
 
   /* ＝＝＝＝＝＝プロフィール＝＝＝＝＝＝ */
+  .profile-content{
+    width: 90%;
+  }
 
+  .profil-img{
+    float: none;
+    margin: 0 auto;
+    width: 90%;
+  }
 
-
-
+  .profile-text{
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+  }
 
 
 
 
   /* ＝＝＝＝＝＝コンタクト＝＝＝＝＝＝ */
+  .contact-content{
+    width: 90%;
+  }
+
+  .contact-left{
+    float: none;
+    margin: 0 auto;
+  }
+
+  .contact-right{
+    float: none;
+    margin: 0 auto;
+  }
+
+  .left-group{
+    text-align: center;
+  }
+
+  .left-group p{
+    padding: 5px 0 20px;
+  }
+
+  .right-group{
+    text-align: center;
+  }
+
+  .right-group i{
+    padding-top: 5px;
+  }
 
 
 
 
 
-
-
-
-
-
-
-  
 }
